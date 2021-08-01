@@ -1,0 +1,40 @@
+{
+"model_name_or_path": "t5-base",
+"tokenizer_name": "t5-base",
+"learning_rate": 3e-4,
+"output_dir": "outputs/finetune/",
+"max_source_length": 128,
+"max_target_length": 128 ,
+"val_max_target_length":128,
+"test_max_target_length":128,
+"num_train_epochs": 100,
+"warmup_steps": 500,
+"eval_steps": 1000,
+"overwrite_output_dir": true,
+"label_smoothing": 0.1,
+"per_device_train_batch_size":32,
+"per_device_eval_batch_size":32,
+"save_steps": 1000,
+"logging_first_step":true,
+"logging_steps": 200,
+"save_total_limit": 1,
+"temperature": 10,
+"do_train": true,
+"do_test": true,
+"do_eval": true,
+"predict_with_generate": true,
+"task_embedding_dim": 512,
+"split_validation_test": true,
+"non_linearity": "gelu_new",
+"load_best_model_at_end": true,
+"evaluation_strategy": "steps",
+"metric_for_best_model": "average_metrics",
+"greater_is_better": true,
+"max_steps": 65536,
+"tasks": ["rte", "sst2", "mrpc", "stsb", "qqp", "mnli", "qnli", "cola"],
+"eval_tasks": ["rte", "sst2", "mrpc", "stsb", "qqp", "mnli", "qnli", "cola"]
+}
+
+
+
+
