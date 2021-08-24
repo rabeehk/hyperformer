@@ -43,8 +43,7 @@
 "unfreeze_lm_head": false,
 "unfreeze_layer_norms": true, 
 "unique_hyper_net": true,
-"adapter_config_name": "meta-adapter",
-"train_task_embeddings": false
+"adapter_config_name": "meta-adapter"
 }
 
 
